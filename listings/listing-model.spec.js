@@ -11,8 +11,8 @@ describe("listing model", function() {
             await db('users').insert({ username: "ss", password: "password"})
 
             await Listing.addListing({
-                nights: "3",
-                beds: "2",
+                rooms: "3",
+                nights: "2",
                 baths: "1",
                 users_id: 1
             });
