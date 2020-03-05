@@ -34,7 +34,7 @@
    
     "pg": "^7.18.2",
     "server": "^1.0.27",
-    "sqlite3": "^4.1.1",
+    "sqlite3": "^4.1.1"
     
   },
   "devDependencies":{
