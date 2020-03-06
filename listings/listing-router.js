@@ -30,7 +30,7 @@ router.get("/:users_id", (req, res) => {
 router.post("/", (req, res) => {
   const listingData = req.body;
   console.log(listingData);
-  Workout.addWorkout(listingData)
+  Listing.addListing(listingData)
 
     .then(listing => {
       res.status(201).json(listing);

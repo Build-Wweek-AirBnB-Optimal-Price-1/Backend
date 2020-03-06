@@ -11,9 +11,13 @@ describe("listing model", function() {
             await db('users').insert({ username: "ss", password: "password"})
 
             await Listing.addListing({
-                rooms: "3",
-                nights: "2",
-                baths: "1",
+                bedrooms: "3",
+                bathrooms: "2",
+                accomodates: "1",
+                instant_bookable:"1",
+                maximum_nights:"7",
+                minimum_nights:"3",
+                price: "400",
                 users_id: 1
             });
             await Listing.deleteListing({ id: 13});
